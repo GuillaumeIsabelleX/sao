@@ -3,10 +3,11 @@ SAO is a Containerized Stack experimentation
 
 ## State
 
-SAO is a Containerized Stack experimentation completed on 19-03. It has enable leveraging Docker host+containerization.
+SAO is a Containerized Stack experimentation completed on 19-03. It has enable leveraging Docker host+containerization. How to create/run/stop a docker container.
 
 
 ## Packaging Scripts
+* To facilitate, this NPM Package.json has the commands to create the container/run/stop it.
 ```json
  "scripts": {
     "dk:build": "docker build -t ngapp190223b .",
