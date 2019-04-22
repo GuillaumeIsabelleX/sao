@@ -6,6 +6,17 @@ SAO is a Containerized Stack experimentation
 SAO is a Containerized Stack experimentation completed on 19-03. It has enable leveraging Docker host+containerization.
 
 
+## Packaging Scripts
+```json
+ "scripts": {
+    "dk:build": "docker build -t ngapp190223b .",
+    "dk:run-fg": "./rundocker-fg",
+    "dk:run-bg": "./stopdocker ; ./rundocker-bg",
+    "dk:run": "npm run dk:run-bg",
+    "dk:stop": "./stopdocker"
+  },
+  ```
+
 ## Dockerfile
 
 ```docker
