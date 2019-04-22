@@ -1,0 +1,6 @@
+docker run -d \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 4200:4200 \
+  --name \
+  ngapp190223b-container ngapp190223b

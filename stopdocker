@@ -1,0 +1,2 @@
+docker stop ngapp190223b-container
+docker rm ngapp190223b-container
