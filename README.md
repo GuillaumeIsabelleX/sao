@@ -16,6 +16,35 @@ SAO is a Containerized Stack experimentation completed on 19-03. It has enable l
     "dk:stop": "./stopdocker"
   },
   ```
+  
+## Running Docker Container
+
+```sh
+############################
+# IN background
+## Start it
+docker run -d \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 4200:4200 \
+  --name \
+  ngapp190223b-container ngapp190223b
+  
+## Stop it
+docker stop ngapp190223b-container
+docker rm ngapp190223b-container
+  
+  #############################
+  # IN foreground
+  docker run -it \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 4200:4200 \
+  --rm \
+  ngapp190223b
+  
+  
+ ```
 
 ## Dockerfile
 
